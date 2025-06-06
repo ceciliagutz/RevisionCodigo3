@@ -1,24 +1,60 @@
+/* Le hice un pequeño cambio al css para agregar más estilos */
+
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #fc93c4;
+  padding: 20px;
+}
+h1{
+  text-align: center;
+}
+
 input {
   width: 500px;
   height: 40px;
-  font-size: 18px;
+  font-size: 16px;
+  padding: 5px 10px; /* Agregue este valor */
+  border-radius: 6px;/* Agregue este valor */
+  border: 1px solid #490037;/* Agregue este valor */
+  margin-right: 10px;/* Agregue este valor */
 }
-
 #lista-de-productos {
-  display: flex
+  display: flex;
+  flex-wrap: wrap; /* Agregue este valor */
+  gap: 20px; /* Agregue este valor */
+  margin-top: 30px;/* Agregue este valor */
 }
-
 .producto {
   width: 200px;
-  height: 200px;
-  margin: 10px;
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #490037;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .producto img {
-  width: 70%;
-  height: auto
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+ /* Agregue estos elementos para tambien darle estilos */
+button {
+  height: 35px;
+  padding: 0 15px;
+  font-size: 16px;
+  background-color: #9e0496;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #f04df0;
+}
+.titulo {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
