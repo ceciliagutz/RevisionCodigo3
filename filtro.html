@@ -12,13 +12,14 @@
 <body>
 
   <div>
-      <input type="text" placeholder="Seleccioná un color o tipo">
-      <button>Filtrar</button>
+      <input class="input" type="text" placeholder="Seleccioná un color o tipo"> <!-- Le agregue una class input para que se relacione con filtro.js porque lo estan llamando pero no tenía la clase  -->
+      <button id="filtrar-productos">Filtrar</button> <!-- Agregue el ID a button para poder llamarlo en mi js  -->
+      <button id="todos-los-productos">Regresar</button> <!-- Agregue esta boton con un ID para poder llamarlo desde mi js y el botón funciona para ver todos los listados desde nuevo -->
       <h1>Lista de productos </h1>
       <div id="lista-de-productos">
     </div>
   </div>
-  <script src="../filtro.js"></script>
+  <script src="./filtro.js"></script> <!-- Le cambie la ruta, porque estaban en diferente nivel -->
 </body>
 
 </html>
